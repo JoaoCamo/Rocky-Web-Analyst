@@ -1,4 +1,4 @@
-Código desenvolvido em javascript usando node.js, para o teste prático para estágiario da "Rocky"
+Código desenvolvido em javascript usando node.js para o teste prático de estágiario para a Rocky.
 
 O código é feito para corrigir ler o arquivo json("broken-database.json") e corrigir nomes, preços e quantidas, após isso ele irá exportar um outro arquivo json denominado "saida.json" com o banco de dados corrigido.
 
