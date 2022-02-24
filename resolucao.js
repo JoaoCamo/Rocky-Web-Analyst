@@ -47,7 +47,7 @@ function arquivo_corrigido(){
     });
 }
 
-//Função o de validação que imprime a lista com todos os nomes dos produtos, ordenados primeiro por categoria em ordem alfabética e ordenados por id em ordem crescente
+//Função o de validação que ordena os produtos primeiro por categoria em ordem alfabética e ordenados por id em ordem crescente
 function ordena_database(){
     const raw_data = fs.readFileSync('saida.json');
     const dados = JSON.parse(raw_data);
@@ -63,7 +63,7 @@ function ordena_database(){
     return dados;
 }
 
-//Função que calcula qual é o valor total do estoque por categoria, ou seja, a soma do valor de todos os produtos em estoque de cada categoria, considerando a quantidade de cada produto. 
+//Função de validação que calcula qual é o valor total do estoque por categoria, ou seja, a soma do valor de todos os produtos em estoque de cada categoria, considerando a quantidade de cada produto e imprime a lista com todos os nomes dos produtos, ordenados primeiro por categoria em ordem alfabética e ordenados por id em ordem crescente.
 function calcula_preco_total(){
     var database_ordenada = ordena_database();
     var total_panela = 0, total_eletrodomesticos = 0, total_eletronicos = 0, total_acessorios = 0;
